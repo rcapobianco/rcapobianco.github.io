@@ -13,6 +13,8 @@ However, the content here is not peer-reviewed, and the discussions are in const
 
 If you have questions, comments, suggestions, or constructive criticism, you can contact me at rogerio.capobianco@gmail.com.
 
+
 Thanks for reading :)
+
 
 Rogério.
