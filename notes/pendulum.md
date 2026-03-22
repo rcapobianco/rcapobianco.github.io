@@ -1,7 +1,7 @@
 ---
 layout: page
 title: The Pendula
-permalink: /notes/pendulum/
+permalink: /notes/the_pendula/
 ---
 
 The pendulum is one of the simplest mechanical systems, but its phase space
