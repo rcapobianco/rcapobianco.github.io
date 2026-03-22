@@ -1,7 +1,8 @@
 ---
 ---
 
-@import "minima";
+@import "minima/skins/default";
+@import "minima/initialize";
 
 
 .notes-list {
