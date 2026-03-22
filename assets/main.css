@@ -1,0 +1,30 @@
+.notes-list {
+  margin-top: 20px;
+}
+
+.note-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 12px;
+}
+
+.note-fig {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+}
+
+.note-text {
+  max-width: 650px;
+}
+
+.note-title {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.note-abs {
+  font-size: 14px;
+  color: #444;
+}
