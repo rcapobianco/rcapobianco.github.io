@@ -1,14 +1,24 @@
 <header class="site-header">
 
-  <div class="wrapper" style="text-align: left; padding-top: 18px; padding-bottom: 8px;">
+  <div class="wrapper" style="padding-top: 18px; padding-bottom: 8px;">
 
-    <div style="font-size: 46px; font-weight: 700; line-height: 1.2;">
-      {{ site.title }}
+    <div style="font-size: 46px; font-weight: 700;">
+      <a href="{{ "/" | relative_url }}" style="text-decoration: none; color: inherit;">
+        {{ site.title }}
+      </a>
     </div>
 
     <div style="font-size: 18px; margin-top: 4px;">
       <em>{{ site.description }}</em>
     </div>
+
+    <nav class="site-nav">
+      {% for page in site.header_pages %}
+        <a class="page-link" href="{{ page | relative_url }}">
+          {{ page | replace: ".md", "" | capitalize }}
+        </a>
+      {% endfor %}
+    </nav>
 
   </div>
 
