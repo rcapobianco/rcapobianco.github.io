@@ -1,7 +1,7 @@
 ---
 layout: page
 title: The Kepler Problem
-permalink: /notes/kepler/
+permalink: /notes/the_kepler_problem/
 ---
 
 # The Kepler Problem
