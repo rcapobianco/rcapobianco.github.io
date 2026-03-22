@@ -4,6 +4,9 @@ theme: minima
 
 markdown: kramdown
 
+minima:
+  skin: default
+
 header_pages:
   - home.md
   - about.md
