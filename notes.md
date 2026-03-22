@@ -10,10 +10,9 @@ permalink: /notes/
     <img src="/assets/pendulum.png" class="note-fig">
 
     <div class="note-text">
-      <div class="note-title">Simple Pendulum</div>
+      <div class="note-title">The Pendula</div>
       <div class="note-abs">
-        Phase space structure, exact solution, and numerical integration
-        of the nonlinear pendulum equation.
+        Reflections on pendulums, often taken as the simplest physical system, are still a rich dynamical system.
       </div>
     </div>
 
@@ -25,10 +24,9 @@ permalink: /notes/
     <img src="/assets/phase.png" class="note-fig">
 
     <div class="note-text">
-      <div class="note-title">Phase Space Basics</div>
+      <div class="note-title">The Kepler Problem</div>
       <div class="note-abs">
-        Basic concepts of phase space, trajectories,
-        fixed points, and stability.
+        Central forces
       </div>
     </div>
 
