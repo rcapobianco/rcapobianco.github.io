@@ -8,7 +8,7 @@ permalink: /notes/
   <div class="note-item">
 
     <a href="/notes/the_pendula/">
-      <img src="/assets/pendulum.png" class="note-fig">
+      <img src="/assets/images/pendulum.png" class="note-fig">
     </a>
 
     <div class="note-text">
@@ -35,7 +35,7 @@ permalink: /notes/
   <div class="note-item">
 
     <a href="/notes/the_kepler_problem/">
-      <img src="/assets/phase.png" class="note-fig">
+      <img src="/assets/images/kepler.png" class="note-fig">
     </a>
 
     <div class="note-text">
