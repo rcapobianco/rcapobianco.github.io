@@ -3,3 +3,6 @@ description: A trip through physics and modeling.
 theme: minima
 
 markdown: kramdown
+
+header_pages:
+  - about.md
