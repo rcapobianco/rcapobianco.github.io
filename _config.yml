@@ -11,3 +11,7 @@ header_pages:
   - home.md
   - about.md
   - notes.md
+  
+kramdown:
+  math_engine: mathjax
+  input: GFM
