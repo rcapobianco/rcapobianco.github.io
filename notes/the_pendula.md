@@ -17,11 +17,11 @@ Think of this as a working notebook: from the simple swing of a mass to the edge
 
 We start with the simplest system: a point mass attached to an inextensible string of fixed length, moving under the influence of gravity. The system is a two-dimensional problem with the coordinates (see Fig. 1):
 
-<div style="display:flex; gap:20px; align-items:flex-start;">
+<div style="display:flex; align-items:flex-start; gap:20px;">
 
-<div style="flex:1; max-width:250px;">
+<div style="width:30%; max-width:260px;">
 
-<img src="/assets/images/planar_pendulum_coordinates.png" width="100%">
+<img src="/assets/images/planar_pendulum_coordinates.png" style="width:100%;">
 
 <p style="font-size:14px; text-align:center;">
 Fig. 1 — Simple pendulum
@@ -29,19 +29,20 @@ Fig. 1 — Simple pendulum
 
 </div>
 
-<div style="flex:2;">
+
+<div style="width:70%;">
 
 $$
 x = \ell \sin\theta , \ \ \ y = - \ell \cos\theta
 $$
 
-thus, the particle is subjected to a potential in the form:
+thus, the particle is subjected to a potential in the form
 
 $$
-U = m g \ell \left( 1 - \cos\theta \right)
+U = m g \ell (1-\cos\theta)
 $$
 
-note that here we are setting the zero of the potential at the pendulum rest point, that is, at $\theta = 0$. Since we are considering the **string to be** inextensible, the motion is restricted to a circumference of radius $\ell$. The kinetic energy can be directly evaluated:
+note that here we are setting the zero of the potential at the pendulum rest point, that is, at $\theta = 0$. Since we are considering the string to be inextensible, the motion is restricted to a circumference of radius $\ell$. The kinetic energy can be directly evaluated:
 
 </div>
 
@@ -90,12 +91,10 @@ $$
 This is the *typical* solution often described in classical mechanics textbooks. The system oscillates between $(\theta_{\min}, \theta_{\max})$ with a period
 
 $$
-T = \frac{2\pi}{\omega_0}
-=
-2\pi \sqrt{\frac{\ell}{g}}
+T = \frac{2\pi}{\omega_0} = 2\pi \sqrt{\frac{\ell}{g}}
 $$
 
-Well, this is really beautiful. However, what happens as we step out of the small-angle approximation? To investigate that, let's take a different pathway. The system is conservative, and therefore the total energy
+Well, this is really beautiful. However, what happens as we step out of the small-angle approximation? To investigate that, let's take a different pathway. The system is conservative, and therefore, the total energy
 
 $$
 E =
@@ -107,8 +106,7 @@ $$
 is conserved. Rearranging the terms and solving for $\theta$, we obtain the *quadrature*
 
 $$
-t - t_0
-=
+t - t_0 =
 \int_{\theta_0}^{\theta(t)}
 \frac{d\theta'}
 {\sqrt{
