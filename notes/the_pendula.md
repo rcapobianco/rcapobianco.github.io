@@ -140,8 +140,10 @@ $$
 
 where we have then defined the dimensionless parameter $\mathcal{E} = E / mg\ell$. A good practice when solving differential equations in physics is to always deal with dimensionless quantities; hence, we re-parametrize our time parameter as $ \sqrt{2\omega_0^{\,2}}\,{\rm d} t = {\rm d}\tau $. Therefore, we deal with the differential equation:
 
+{% raw %}
 $$
 \left( \frac{{\rm d}\theta}{{\rm d}\tau} \right)^2 = \mathcal{E} - ( 1 - \cos\theta) \ .
-$$ 
+$$
+{% endraw %}
 
 Now, we need to distinguish between the possible domains of existence for the orbits. First, noting that $0 \le 1-\cos\theta \le 2$, there are three different regimes: when $\mathcal{E} < 2$, and thus there is a "competition" between these two comparable contributions, leading to a bound motion; the case $\mathcal{E} = 2$ signals that the system has **exactly the energy needed** to reach the maximum value $\theta_{\max} = \pi$—this is the system's separatrix; the last case is $\mathcal{E} > 2$: here the square root is positive regardless of the values assumed by $\theta$, the system can do complete circular rotations, and therefore the orbit is unbound.
