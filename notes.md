@@ -20,9 +20,9 @@ permalink: /notes/
       </div>
 
       <div class="note-abs">
-        Reflections on pendulums, often taken as the simplest physical system,
-        but still a remarkably rich dynamical system with nonlinear behavior,
-        phase–space structure, and exact solutions.
+        Reflections on the pendulum, often introduced as the simplest mechanical system, yet rich in nonlinear dynamics and integrability. 
+        
+        We explore the simple, double, and spherical pendula through analytic results and numerical experiments.
       </div>
 
     </div>
