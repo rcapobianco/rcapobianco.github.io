@@ -6,12 +6,19 @@
   display: flex;
   align-items: flex-start;
   gap: 15px;
-  margin-bottom: 12px;
+  margin-bottom: 18px;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.note-item:hover {
+  background: #f7f7f7;
 }
 
 .note-fig {
   max-width: 120px;
   height: auto;
+  max-height: 120px;
 }
 
 .note-title {
@@ -22,4 +29,9 @@
 .note-abs {
   font-size: 14px;
   color: #444;
+}
+
+hr {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
