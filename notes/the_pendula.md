@@ -224,7 +224,7 @@ $$
 \omega_1 = 4K(k) \ , \ \ \ \qquad \ \ \  \omega_2 = 2 i K(1-k), 
 $$
 
-where $ K(k) = F(\pi/2, k) $ is known as *complete elliptic integral of the first kind*, it has real modulus for $ |k| \le 1 $, and this is precisely the period of our motion we are interested in. Therefore, the planar pendulum motion has a period:
+where $ K(k) = F(\pi/2, k) $ is known as *complete elliptic integral of the first kind*, it has real modulus for $ \lvert k \rvert \le 1 $, and this is precisely the period of our motion we are interested in. Therefore, the planar pendulum motion has a period:
 
 $$
 T= \frac{4}{\omega_0}K(k) \ ,
@@ -265,7 +265,7 @@ $$
 where: $\theta(t) = 2{\rm x}(t)$. The above integral can now be directly evaluated:
 
 $$
-\int \sec{\rm x} \, {\rm d x} = \ln \left( | \sec{\rm x} - \tan{\rm x} | \right) + C = \ln \left( \left| \tan \left( \frac{\pi}{4} + \frac{\theta}{4} \right) \right| \right) + C \ .
+\int \sec{\rm x} \, {\rm d x} = \ln \left( \lvert \sec{\rm x} - \tan{\rm x} \rvert \right) + C = \ln \left( \left| \tan \left( \frac{\pi}{4} + \frac{\theta}{4} \right) \right| \right) + C \ .
 $$
 
 Then, after some simple manipulation, we obtain the separatrix exact solution:
