@@ -1,5 +1,6 @@
 ---
 layout: page
+title: Notes
 permalink: /notes/
 ---
 <div class="notes-list">
