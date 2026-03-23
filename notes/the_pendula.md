@@ -14,3 +14,11 @@ Here we will study:
 - phase space
 - exact solution
 - numerical solution
+
+This is a test inline equation: \( E = mc^2 \)
+
+This is a displayed equation:
+
+$$
+\ddot{\theta} + \frac{g}{l} \sin\theta = 0
+$$
