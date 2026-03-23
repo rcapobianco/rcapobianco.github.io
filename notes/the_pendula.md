@@ -1,6 +1,7 @@
 ---
 layout: page
 title: The Pendula
+date: 2026-03-23
 permalink: /notes/the_pendula/
 ---
 
