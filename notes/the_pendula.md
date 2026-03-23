@@ -224,7 +224,7 @@ $$
 \omega_1 = 4K(k) \ , \ \ \ \qquad \ \ \  \omega_2 = 2 i K(1-k), 
 $$
 
-where $K(k) = F(\pi/2, k)$ is known as *complete elliptic integral of the first kind*, it has real modulus for $|k| \le 1$, and this is precisely the period of our motion we are interested in. Therefore, the planar pendulum motion has a period:
+where $ K(k) = F(\pi/2, k) $ is known as *complete elliptic integral of the first kind*, it has real modulus for $ |k| \le 1 $, and this is precisely the period of our motion we are interested in. Therefore, the planar pendulum motion has a period:
 
 $$
 T= \frac{4}{\omega_0}K(k) \ ,
