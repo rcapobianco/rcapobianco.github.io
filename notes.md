@@ -20,7 +20,7 @@ permalink: /notes/
       </div>
 
       <div class="note-abs">
-        Reflections on the pendulum, often introduced as the simplest mechanical system, yet rich in nonlinear dynamics and integrability. 
+        Reflections on the pendulum, often introduced as the simplest mechanical system, yet rich in nonlinear dynamics and integrability. <br>
         
         We explore the simple, double, and spherical pendula through analytic results and numerical experiments.
       </div>
