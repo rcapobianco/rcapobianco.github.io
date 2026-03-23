@@ -25,8 +25,8 @@ $$
 $$
 
 $$
-\begin{align}
+\begin{aligned}
     x_1 &= \ell_1\sin\theta_1 \ , \ \ \ &\quad \ \ \ y_1 &= -\ell_1\cos\theta_1 \ , \\
     x_2 &= x_1 + \ell_2\sin\theta_2 \ , \ \ \ &\quad \ \ \ y_2 &= y_1 - \ell_2\cos\theta_2 \ ,
-\end{align}
+\end{aligned}
 $$
