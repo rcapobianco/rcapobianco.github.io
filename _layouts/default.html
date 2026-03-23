@@ -6,17 +6,7 @@ layout: base
 <html lang="en">
 
   {% include head.html %}
-  
-  <script>
-  window.MathJax = {
-    tex: {
-      inlineMath: [['\\(', '\\)'], ['$', '$']],
-      displayMath: [['$$','$$']]
-    }
-  };
-  </script>
 
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
   <body>
 
@@ -31,6 +21,8 @@ layout: base
     <link rel="stylesheet" href="{{ "/assets/custom.css" | relative_url }}">
 
     {% include footer.html %}
+
+    {% include mathjax.html %}
 
   </body>
 
