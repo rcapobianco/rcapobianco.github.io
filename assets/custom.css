@@ -51,3 +51,7 @@ hr {
 .page-content .wrapper {
   max-width: 1300px !important;
 }
+
+.page-heading {
+  display: none;
+}
