@@ -5,6 +5,18 @@ date: 2026-03-23
 permalink: /notes/the_pendula/
 ---
 
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']],
+    displayMath: [['$$','$$']]
+  }
+};
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
 The pendulum is one of the simplest mechanical systems, but its phase space
 structure already shows nonlinear behavior.
 
