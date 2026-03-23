@@ -4,6 +4,11 @@ theme: minima
 
 markdown: kramdown
 
+kramdown:
+  input: GFM
+  math_engine: mathjax
+  syntax_highlighter: rouge
+
 minima:
   skin: default
 
@@ -11,7 +16,3 @@ header_pages:
   - home.md
   - about.md
   - notes.md
-  
-kramdown:
-  math_engine: mathjax
-  input: GFM
