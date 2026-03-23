@@ -16,7 +16,7 @@ Here we will study:
 - exact solution
 - numerical solution
 
-This is a test inline equation: \( E = mc^2 \)
+This is a test inline equation: $ E = mc^2 $
 
 This is a displayed equation:
 
