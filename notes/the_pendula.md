@@ -5,26 +5,6 @@ date: 2026-03-23
 permalink: /notes/the_pendula/
 ---
 
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-  window.MathJax = {
-    tex: {
-      inlineMath: [['$', '$'], ['\\(', '\\)']],
-      displayMath: [['$$','$$']]
-    },
-    svg: {
-      fontCache: 'global'
-    }
-  };
-
-  var script = document.createElement("script");
-  script.src = "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js";
-  script.async = true;
-  document.head.appendChild(script);
-});
-</script>
-
-
 
 The pendulum is one of the simplest mechanical systems, but its phase space
 structure already shows nonlinear behavior.
