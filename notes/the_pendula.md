@@ -19,36 +19,38 @@ We start with the simplest system: a point mass attached to an inextensible stri
 
 <div style="display:flex; align-items:flex-start; gap:20px;">
 
-<div style="width:40%; max-width:260px;">
+  <!-- Left column: image -->
+  <div style="flex:0 0 40%; max-width:260px;">
+    <img src="/assets/images/planar_pendulum_coordinates.png" style="width:100%; display:block;">
+    <p style="font-size:14px; text-align:center; margin-top:5px;">
+      Fig. 1 — Simple pendulum
+    </p>
+  </div>
 
-<img src="/assets/images/planar_pendulum_coordinates.png" style="width:100%;">
+  <!-- Right column: text -->
+  <div style="flex:1; min-width:0;">
+    <p>
+    $$
+    x = \ell \sin\theta , \ \ \ y = - \ell \cos\theta
+    $$
+    </p>
 
-<p style="font-size:14px; text-align:center;">
-Fig. 1 — Simple pendulum
-</p>
+    <p>
+    thus, the particle is subjected to a potential in the form
+    </p>
+
+    <p>
+    $$
+    U = m g \ell (1-\cos\theta)
+    $$
+    </p>
+
+    <p>
+    note that here we are setting the zero of the potential at the pendulum rest point, that is, at $\theta = 0$. Since we are considering the string to be inextensible, the motion is restricted to a circumference of radius $\ell$. The kinetic energy can be directly evaluated:
+    </p>
+  </div>
 
 </div>
-
-
-<div style="width:60%;">
-
-$$
-x = \ell \sin\theta , \ \ \ y = - \ell \cos\theta
-$$
-
-thus, the particle is subjected to a potential in the form
-
-$$
-U = m g \ell (1-\cos\theta)
-$$
-
-note that here we are setting the zero of the potential at the pendulum rest point, that is, at $\theta = 0$. Since we are considering the string to be inextensible, the motion is restricted to a circumference of radius $\ell$. The kinetic energy can be directly evaluated:
-
-</div>
-
-</div>
-
-
 
 $$
 \mathcal{K} = \frac{m}{2} v(t)^2
