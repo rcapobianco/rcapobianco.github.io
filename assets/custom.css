@@ -35,14 +35,15 @@ hr {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
 .wrapper {
-  max-width: 1300px;
+  max-width: 1300px !important;
 }
 
 .site-header .wrapper {
-  max-width: 1300px;
+  max-width: 1300px !important;
 }
 
 .page-content .wrapper {
-  max-width: 1300px;
+  max-width: 1300px !important;
 }
