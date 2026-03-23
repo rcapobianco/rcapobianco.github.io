@@ -147,3 +147,163 @@ $$
 {% endraw %}
 
 Now, we need to distinguish between the possible domains of existence for the orbits. First, noting that $0 \le 1-\cos\theta \le 2$, there are three different regimes: when $\mathcal{E} < 2$, and thus there is a "competition" between these two comparable contributions, leading to a bound motion. The case $\mathcal{E} = 2$ signals that the system has **exactly the energy needed** to reach the maximum value $\theta_{\max} = \pi$—this is the system's separatrix. The last case is $\mathcal{E} > 2$: here the square root is positive regardless of the values assumed by $\theta$, the system can do complete circular rotations, and therefore the orbit is unbound.
+
+{% raw %}
+- *Bound Orbit*, the case: $\mathcal{E} < 2$:
+
+Here, the allowed regions for orbits strongly depend on the turning points. Imagine that we start the motion with the initial value problem: 
+
+$$
+\theta(t_0) = \theta_0 \ , \ \ \ \qquad \ \ \ \dot{\theta}(t_0) = \dot{\theta}_0 \ .
+$$
+
+Note that the initial velocity cannot be chosen separately from the energy. Besides, it is important to highlight here that, although we are dealing with a first-order differential equation, the numerical value of $\dot{\theta}_0$ does not play any important role in the solution; however, $\mathrm{sign}\, \dot{\theta}_0$ is required to fix the possible branch. The maximum value of the energy is reached exactly at the turning point of the motion, thus: 
+
+$$
+\frac{{\rm d}\theta}{{\rm d}\tau} =0 \ \ \ \rightarrow \boxed{ \mathcal{E} = 1 - \cos\theta_{\max} } 
+$$
+
+It is clear then that we must have: $\theta_0 \leq \theta_{\max}$; therefore, for a given value of $\mathcal{E}$, the motion is only allowed between $( -\theta_{\max}, \theta_{\max} )$. From here, it is easy to verify that for a particle starting from rest $\dot{\theta}_0 = 0$, which implies $\theta_{\max} = \theta_0$. Thus, our equation becomes:
+
+$$
+\left( \frac{{\rm d}\theta}{{\rm d}\tau} \right)^2 = \cos\theta - \cos\theta_{\max} \ , \ \ \ \rightarrow \ \ \ \boxed{
+{\rm d}\tau = \xi_{\theta} \frac{{\rm d}\theta}{\sqrt{\cos\theta - \cos\theta_{\max} } } }
+$$
+
+with $\xi_\theta = \pm 1$ as the chosen sign, which is fundamental to set the integration onto the right branch. We rewrite the rhs by using the relation: $ \cos\theta = 1-2\sin^2\left(\frac{\theta}{2}\right) $, obtaining:
+
+$$
+{\rm d}\tau = \frac{\xi_{\theta}}{\sqrt{2}} \frac{{\rm d}\theta}{\sqrt{\sin^2\left( \frac{\theta_{\max}}{2} \right) - \sin^2 \left( \frac{\theta}{2} \right) } } \ .
+$$
+
+The first term here is just a constant, so we set: $k = \sin \left( \frac{\theta_{\max}}{2} \right)$, such that $0 < k < 1$. Now we perform the transformation:
+
+$$
+\sin \left( \frac{\theta}{2} \right) = k \sin \psi \ , \ \ \ \qquad \ \ \ {\rm d}\theta = \frac{2k \cos\psi}{\sqrt{ 1-k^2\sin^2\psi }} {\rm d}\psi \ ,
+$$
+
+such that $-\pi/2 \leq \psi \leq \pi/2$, and then we have:
+
+$$
+\frac{\xi_\theta}{\sqrt{2}} {\rm d}\tau = \frac{{\rm d}\psi}{\sqrt{1-k^2 \sin^2\psi} } \ , \ \ \ \rightarrow \ \ \ \xi_\theta \omega_0 \left( t-t_0 \right) = \int_{\psi_0}^{\psi} \frac{{\rm d}\psi'}{\sqrt{1-k^2 \sin^2\psi'} } \ , 
+$$
+
+This is precisely the form we want. At this stage, let us introduce the first elliptic function, the *Jacobi elliptic integral of the first kind*: 
+
+$$
+F \left( \psi, k \right) = \int_0^{\psi} \frac{{\rm d}\psi}{\sqrt{1-k^2 \sin^2 \psi} }.
+$$
+
+Applying that to our problem, we have:
+
+$$
+\int_{\psi_0}^{\psi} \frac{{\rm d}\psi'}{\sqrt{1-k^2 \sin^2\psi'} } = \int_{\psi_0}^{0} \frac{{\rm d}\psi'}{\sqrt{1-k^2 \sin^2\psi'} } + \int_{0}^{\psi} \frac{{\rm d}\psi'}{\sqrt{1-k^2 \sin^2\psi'} } = F(\psi, k) - F(\psi_0, k) \ ,
+$$
+
+the second term depends only on the initial conditions. From that, we can set our problem in terms of the $F(\psi, k)$ function as:
+
+$$
+F(\psi, k ) = \xi_\theta \omega_0 \left( t-t_0 \right) + F(\psi_0,k) := u(t)
+$$
+
+But remember, we are looking for a $\theta(t)$ solution, and to obtain that, we need to invert the above expression. This problem is part of the known as *Jacobi inversion problem*. The inversion of $F(\psi, k)$ is the Jacobi amplitude function:
+
+$$
+\psi(t) = F^{-1}(\psi,k) = \mathrm{am}(u(t),k) \ .
+$$
+
+Then we conclude:
+
+$$
+\theta(t) = 2 \arcsin\left[ k \, \mathrm{sn}\left( \xi_\theta \omega_0 (t-t_0) + F(\psi_0, k) , k \right) \right] \ ,
+$$
+
+where $\mathrm{sn}(u,k) = \sin(\mathrm{am}(u,k))$. The motion is oscillatory for $\theta_{\max} < \pi$, or analogously $k<1$. Remember, as previously mentioned, elliptic functions are doubly periodic. In this case, the two periods of $\mathrm{sn}(u,k)$ are: 
+
+$$
+\omega_1 = 4K(k) \ , \ \ \ \qquad \ \ \  \omega_2 = 2 i K(1-k), 
+$$
+
+where $K(k) = F(\pi/2, k)$ is known as *complete elliptic integral of the first kind*, it has real modulus for $|k| \le 1$, and this is precisely the period of our motion we are interested in. Therefore, the planar pendulum motion has a period:
+
+$$
+T= \frac{4}{\omega_0}K(k) \ ,
+$$
+
+where we just dropped the sign $\xi_\theta$. To show explicitly that this reproduces the known small-angle periods, consider that around zero, $K(k \approx 0)$ accepts the expansion:
+
+$$
+K(k \approx 0) = \frac{\pi}{2} \left( 1 + \frac{k^2}{4} + \mathcal{O}(k^4) \right),
+$$
+
+and then we recover the harmonic oscillator period $T = 2\pi/\omega_0$ at first order.
+
+A very interesting and *unexpected* feature completely absent in the small-angle approximation can be seen here explicitly: the period of the oscillatory motion is strictly related to its amplitude!
+
+$$
+T = \frac{4}{\omega_0}K(k) = \frac{4}{\omega_0}K\left( \sin\left( \frac{\theta_{\max}}{2} \right) \right) \ .
+$$
+
+Oscillatory motion requires $\theta_{\max} < \pi$. As $\theta_{\max} \rightarrow \pi$, $k \rightarrow 1$ and $K(k)$ diverges logarithmically. Physically, this corresponds to the pendulum approaching the unstable equilibrium point. The equations of motion are still satisfied, but the period becomes infinite; thus, it would require an infinite time for the pendulum to complete a swing. This is exactly the indication of the separatrix!
+{% endraw %}
+
+{% raw %}
+- *Separatrix*, the case $\mathcal{E} = 2$:
+
+At the separatrix, we deal with the equation:
+
+$$
+\mathcal{E} = 0 \ , \ \ \ \rightarrow \ \ \ \boxed{ \frac{{\rm d}\theta}{{\rm d}\tau} = \xi_{\theta} \sqrt{1 + \cos\theta} }
+$$
+
+By rewriting the equation using the relation: $ 1 + \cos\theta = 2 \cos^2 \left( \frac{\theta}{2} \right)$ we find:
+
+$$
+{\rm d}\tau = \xi_\theta \frac{{\rm d}\theta}{\sqrt{2} \cos\left( \frac{\theta}{2} \right)} = \xi_\theta \sqrt{2} \sec{\rm x} {\rm d x}
+$$
+
+where: $\theta(t) = 2{\rm x}(t)$. The above integral can now be directly evaluated:
+
+$$
+\int \sec{\rm x} \, {\rm d x} = \ln \left( | \sec{\rm x} - \tan{\rm x} | \right) + C = \ln \left( \left| \tan \left( \frac{\pi}{4} + \frac{\theta}{4} \right) \right| \right) + C \ .
+$$
+
+Then, after some simple manipulation, we obtain the separatrix exact solution:
+
+$$
+\theta(t) = 4 \arctan \left( \tan \left( \frac{\theta_0 + \pi}{4} \right) \exp\left( \xi_\theta \omega_0 (t-t_0) \right) \right) - \pi \ .
+$$
+
+This special regime, the separatrix, is exactly the curve that separates the two distinct types of motion in the planar pendulum, the bounded and the unbounded. Note that we have a very interesting behaviour here: starting from an initial point $\theta_0 \neq \pi$, the pendulum will swing to approach the equilibrium points $(-\pi,\pi)$ depending on the sign $\xi_\theta$; however, those points cannot be reached in a finite time. Another interesting feature is that, by setting the initial condition $\theta_0 = \pi$ and $\mathcal{E} = 2$, it marks exactly the unstable equilibrium orbits. This means that the pendulum will then be there until even an infinitesimal perturbation changes the system.
+{% endraw %}
+
+{% raw %}
+- *Unbound Orbits*, the case $\mathcal{E} > 2$:
+
+Back to the conservation of energy: 
+
+$$
+\frac{{\rm d}\theta }{{\rm d}\tau} = \xi_\theta \sqrt{\mathcal{E} - (1-\cos\theta)} \ ,
+$$
+
+which is now positive regardless of the value of $\theta(t)$. Now we once again perform: $1 - \cos\theta = 2\sin^2\varphi$, where $\varphi = \theta/2$, obtaining:
+
+$$
+{\rm d}\tau = \xi_\theta \sqrt{\frac{1}{\mathcal{E}}} \frac{{2 \rm d}\varphi}{\sqrt{1-j^2 \sin^2\varphi} } \ ,
+$$
+
+where we defined $ j = \sqrt{2/\mathcal{E}}$. The expression is now again in Jacobi's form with $0 < j < 1$ and $-\pi/2 < \varphi < \pi/2$, therefore: 
+
+$$
+F(\varphi,j) = \xi_\theta \sqrt{\frac{\mathcal{E}}{2}}\omega_0 \left( t-t_0 \right) + F\left( \frac{\theta_0}{2}, j \right) := u(t) \ ,
+$$
+
+and now the inversion is straightforward: 
+
+$$
+\theta (t) = 2 \mathrm{am} \left( \xi_\theta \sqrt{\frac{\mathcal{E}}{2}}\omega_0 \left( t-t_0 \right) + F\left( \frac{\theta_0}{2}, j \right) , j \right) \ ,
+$$
+
+where $\mathrm{am}(u(t),j)$ is the amplitude function. In this scenario, the pendulum has more than enough energy to complete a full rotation regardless of the starting conditions $( \theta_0 , \dot{\theta_0} )$ and, since the system is conservative, the orbits repeat themselves indefinitely.
+{% endraw %}
+
