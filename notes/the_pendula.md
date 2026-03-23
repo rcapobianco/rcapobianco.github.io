@@ -5,28 +5,12 @@ date: 2026-03-23
 permalink: /notes/the_pendula/
 ---
 
+A few systems are as familiar to physicists as the pendulum. It is among the first systems to be discussed in a mechanics course, and the one, re-framed as a harmonic oscillator, that appears in all fields of physics. The simplest model--a mass, an inextensible string, and gravity--yet it reveals a subtle beauty. 
 
-The pendulum is one of the simplest mechanical systems, but its phase space
-structure already shows nonlinear behavior.
+However, that is only the first chapter in the long history of the pendulum in physics. That is the main objective of this page: \textbf{The pendula} will be our ship to navigate through classical mechanics and dynamical systems. We will start with the simple planar pendulum in the small-oscillation approximation, and gradually sail toward more complex systems. As we relax our assumptions, the simplicity fades away, elementary functions give way to elliptic functions, and eventually, integrability is lost altogether, requiring a numerical approach.
 
-Here we will study:
+For this essay, some knowledge of classical mechanics will be helpful. We will also \textit{touch} on the theory of elliptic functions, for which a small introduction is provided. Additionally, codes are provided alongside the solutions discussed here. The goal is not to be exhaustive but to explore how much physics remains hidden in a system we often take for granted. 
 
-- equation of motion
-- phase space
-- exact solution
-- numerical solution
+Think of this as a working notebook: from the simple swing of a mass to the edge of chaos. I am glad you are here.
 
-This is a test inline equation: \( E = mc^2 \) and $ E=mc^3 $
-
-This is a displayed equation:
-
-$$
-\ddot{\theta} + \frac{g}{l} \sin\theta = 0
-$$
-
-$$
-\begin{aligned}
-    x_1 &= \ell_1\sin\theta_1 \ , \ \ \ &\quad \ \ \ y_1 &= -\ell_1\cos\theta_1 \ , \\
-    x_2 &= x_1 + \ell_2\sin\theta_2 \ , \ \ \ &\quad \ \ \ y_2 &= y_1 - \ell_2\cos\theta_2 \ ,
-\end{aligned}
-$$
+# The Planar Pendulum
