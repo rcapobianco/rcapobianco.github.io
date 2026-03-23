@@ -19,7 +19,7 @@ We start with the simplest system: a point mass attached to an inextensible stri
 
 <div style="display:flex; align-items:flex-start; gap:20px;">
 
-<div style="width:30%; max-width:260px;">
+<div style="width:35%; max-width:260px;">
 
 <img src="/assets/images/planar_pendulum_coordinates.png" style="width:100%;">
 
@@ -30,7 +30,7 @@ Fig. 1 — Simple pendulum
 </div>
 
 
-<div style="width:70%;">
+<div style="width:65%;">
 
 $$
 x = \ell \sin\theta , \ \ \ y = - \ell \cos\theta
