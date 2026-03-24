@@ -698,9 +698,160 @@ $$
 {% endraw %}
 
 
+This is known as the \textit{Weierstrass form}, while $\{ g_2, g_3\}$ are the two Weierstrass invariants. The possible motion here depends on the roots of $P_W(v)$. In general, the motion is bounded when there are at least two distinct real roots. An interesting case is when the system has a double root at the equilibrium point, which is the conical motion; this is the separatrix motion. When there is one real root and two complex conjugate roots, the motion is unbounded; this is the case where the energy goes beyond the angular momentum barrier.     
 
+Assume that we are solving the IVP:
 
+{% raw %}
+$$
+\theta(t_0) = \theta_0\, , \ \ \phi(t_0) = \phi_0\, ,
+$$
+{% endraw %}
 
+or, in terms of the new variable $v(t_0) := v_0 =-\frac{1}{4}\left( \cos\theta_0 + \frac{\mathcal{E}-1}{3} \right)$. Integrate both sides, we have:
+
+{% raw %}
+$$
+\int_{\tau_0}^{\tau}{\rm d}\tau = \xi \int_{v_0}^{v}\frac{{\rm d}v}{\sqrt{P_W(v)}}\, ,
+$$
+{% endraw %}
+
+where $\xi=\pm1$ is the sign. The rhs solves the inversion problem:
+
+{% raw %}
+$$
+t = \int_{\infty}^{v} \frac{{\rm d}v'}{\sqrt{P_W(v')}}\,\ \ \ \rightarrow \ \ \  v(t) = \wp(t, \{g_2,g_3\})\, ,
+$$
+{% endraw %}
+
+where $\wp(t, \{g_2,g_3 \})$ is the Weierstrass $\wp-$function, an elliptic function. In order to cast our IVP into this final form, we do;
+
+{% raw %}
+$$
+\int_{v_0}^{v} \frac{{\rm d}v'}{\sqrt{P_W(v')}} = \int_{v_0}^{\infty}\frac{{\rm d}v'}{\sqrt{P_W(v')}} + \int_{\infty}^{v}\frac{{\rm d}v'}{\sqrt{P_W(v')}}\,,
+$$
+{% endraw %}
+
+where the first integral depends only on the initial conditions, thus, the integral can be evaluated in terms of Weierstrass $\wp-$ function as:
+
+{% raw %}
+$$
+\tau - \tau_{0} - v_{in} = \int_{\infty}^{v} \frac{{\rm d}v'}{\sqrt{P_W(v')}} \ \ \ \rightarrow \ \ \ v(t) = \wp(\tau - v_{in}, \{g_2,g_3 \})\, ,
+$$
+{% endraw %}
+
+with $v_{in} = \xi \int_{\infty}^{v_0} \frac{{\rm d}v'}{\sqrt{P_W(v')}}$. Finally, we obtain the solution:
+
+{% raw %}
+$$
+\boxed{\
+\theta(t) = \arccos\Big(-4\wp\left( \sqrt{2\omega_0^{\,2}} \left( t-t_0 \right) - v_{in} \right) - \frac{\mathcal{E}-1}{3}\Big) \, , \{g_2,g_3 \} \Big)\, }
+$$
+{% endraw %}
+
+The next step is to solve the $\phi-$ equation:
+
+{% raw %}
+$$
+\dot{\phi} = \frac{L_z}{m\ell^2\sin^2\theta} \ \ \ \rightarrow \ \ \ \frac{{\rm d}\phi}{{\rm d}\tau} = \frac{\alpha}{1-\cos^2\theta}\,,
+$$
+{% endraw %}
+
+with $\alpha = L_z^{\,2}/\sqrt{2\omega_0^{\,2}}m\ell^2$. This equation can also be analytically integrated, but it requires some slightly more sophisticated use of the theory of elliptic functions. Although we may not have the time to do a detailed discussion here, we will proceed to set the ODE into the desired form to be integrated using elliptic functions, and then introduce all functions used. To start, we write down the very same transformations applied before to write down the equation in terms of $v(\tau)$ and expand in partial fractions as;
+
+{% raw %}
+$$
+\frac{{\rm d}\phi}{{\rm d}\tau} = \frac{\alpha}{8} \Big( \frac{1}{v-v_1} - \frac{1}{v-v_2} \Big) \ \ \rightarrow 
+\begin{cases}
+v_1 = -\left( \mathcal{E}+2 \right) / 12\, , \\
+v_2 = - \left( \mathcal{E}-4 \right) / 12\,.
+\end{cases}
+$$
+{% endraw %}
+
+In this form we can integrate the equations by using the recurrence relation:
+
+{% raw %}
+$$
+\int \frac{{\rm d x}}{\wp({\rm x}) - \wp({\rm y})} = \frac{1}{\wp'({\rm y})} \Big[ 2 \zeta({\rm y}) {\rm x} + \ln \frac{\sigma({\rm x-y})}{\sigma({\rm x+y})} \Big]\, ,
+$$
+{% endraw %}
+
+here there is two new Weierstrass functions $\zeta(z)$ and $\sigma(z)$, which are defined as:
+
+{% raw %}
+$$
+\frac{{\rm d}}{{\rm d}z}\zeta(z) = -\wp(z)\, , \ \ \ \qquad \ \ \ \frac{{\rm d}}{{\rm d}z}\ln \sigma(z) = \zeta(z)\, .
+$$
+{% endraw %}
+
+Actually, these are not elliptic functions, but "\textit{quasi-elliptic}". However, they also have interesting properties. We already mentioned that $\wp(z)$ is an elliptic function and thus doubly-periodic with periods $2\omega_1$ and $2\omega_2$; the function $\zeta(z)$ evaluated at the two periods give; 
+
+{% raw %}
+$$
+\zeta(z+\omega_1) - \zeta(z) = 2\eta_1\, , \ \ \ \qquad \ \ \ \zeta(z+\omega_2) - \zeta(z) = 2\eta_2\, , 
+$$
+{% endraw %}
+
+where $\eta_1$ and $\eta_2$ are sometimes referred to as \textit{periods of second-kind}. An interesting relation between the two kinds of periods is known as the \textit{Legendre relation}:
+
+{% raw %}
+$$
+\omega_2 \eta_1 - \omega_2 \eta_1 = \frac{1}{2}\pi i \, .
+$$
+{% endraw %}
+
+Thus, we can use the above recurrence relation to solve the $\phi-$ equation for the spherical pendulum by setting $v_1 = \wp(y_1)$ and $v_2 = \wp(y_2)$. Note, however, that the function $\wp(z)$ is a \textit{multi-valued} function with a particular interesting property: it takes every value in its domain exactly two times. Thus, the choice of $v_i = \wp(y_i)$ is not unique. Finally, using the discussion presented above, we find: 
+
+{% raw %}
+$$
+\int_{\phi_0}^{\phi} {\rm d}\phi' = \frac{\alpha}{8} \int_{v_0}^{v} \Big( \frac{1}
+{v - \wp(y_1)} - \frac{1}{v-\wp(y_2)}\Big) {\rm d}v\, ,
+$$
+{% endraw %}
+
+now we insert the known solution to $v(t) = \wp(\tau-\tau_{in})$ that satisfies the $\theta-$IVP, and then integrate using the above recurrence relation:
+
+{% raw %}
+$$
+\begin{aligned}
+\phi(t) = \phi_0 + \frac{\alpha}{8} \left[ \frac{1}{\wp'(y_1)} \left( 2\zeta(y_1) \left(\sqrt{2\omega_0^2}(t-t_0) -v_{in} \right) + \ln \frac{\sigma\Big( \sqrt{2\omega_0^{\,2}}t - v_{in} -y_1 \Big)}{\sigma\Big( \sqrt{2\omega_0^{\,2}}t - v_{in} + y_1 \Big)} - \ln \frac{\sigma\Big( \sqrt{2\omega_0^{\,2}}t_0 - v_{in} -y_1 \Big)}{\sigma\Big( \sqrt{2\omega_0^{\,2}}t_0 - v_{in} + y_1 \Big)} \right) \right.
+\\ \left.
++ \frac{1}{\wp'(y_2)} \left( 2\zeta(y_2) \left(\sqrt{2\omega_0^2}(t-t_0) -v_{in} \right) + \ln \frac{\sigma\Big( \sqrt{2\omega_0^{\,2}}t - v_{in} -y_2 \Big)}{\sigma\Big( \sqrt{2\omega_0^{\,2}}t - v_{in} + y_2 \Big)} - \ln \frac{\sigma\Big( \sqrt{2\omega_0^{\,2}}t_0 - v_{in} -y_2 \Big)}{\sigma\Big( \sqrt{2\omega_0^{\,2}}t_0 - v_{in} + y_2 \Big)} \right)
+\right]
+\end{aligned}
+$$
+{% endraw %}
+
+This may be lengthy, but it is the final analytical solution of the spherical pendulum in terms of Weierstrass elliptic functions.
+
+A particularly special case is the \textit{conical orbit}. In that case, the motion is exactly set at the equilibrium point, the system has a double root, the elliptic functions degenerate, and are no longer necessary. The motion is restricted in the $\theta-$ direction, which means that the motion should have both the $\ddot{\theta} = \dot{\theta}=0$, thus:
+
+{% raw %}
+$$
+\begin{aligned}
+\ddot{\theta} = 0\, \ &\rightarrow
+\ \ \frac{{\rm d}V_{eff}}{{\rm d}\theta} = 0 \ \ \ 
+\rightarrow \ \ \  \boxed{ L_z^{\,2} = m^2 g \ell^3\frac{\sin^4\theta_0}{\cos\theta_0} } \\
+\dot{\theta} = 0\, \ &\rightarrow 
+\ \ \ E = V_{eff} \ \ \ \rightarrow \ \ \ 
+\boxed{E = \frac{m g \ell}{2}\frac{1 + 2\cos\theta_0 - 3\cos^2\theta_0}{\cos\theta_0} }
+\end{aligned}
+$$
+{% endraw %}
+
+In this special case, the solution can be obtained directly without requiring the use of elliptic functions:  
+
+{% raw %}
+$$
+\begin{aligned}
+\theta(t) &= \theta_0\,, \\
+\phi(t) &= \phi_0 + \frac{L_z}{m\ell^2\sin^2\theta_0}(t-t_0)
+\end{aligned}
+$$
+{% endraw %}
+
+Thus, this is the case in which the gravitational force is precisely balanced by the angular motion.
 
 
 
