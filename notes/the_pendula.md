@@ -360,7 +360,9 @@ $$
 
 <div>
 
-where we have set $\Delta = \theta_1 - \theta_2$. Let's now consider that each mass is subject to a gravitational potential as:
+<div>
+
+where we have set $ \Delta = \theta_1 - \theta_2 $. Let's now consider that each mass is subject to a gravitational potential as:
 
 {% raw %}
 $$
@@ -368,7 +370,7 @@ U = - (m_1 + m_2) g \ell_1 (1-\cos\theta_1) - m_2 g \ell_2 (1-\cos\theta_2) ,
 $$
 {% endraw %}
 
-where, once again, we set the potential energy to zero at the rest point $\theta_1 = \theta_2 = 0$. The equations of motion are coupled and can now be obtained from the Lagrangian $\mathcal{L} = \mathcal{K} - U$ as:
+where, once again, we set the potential energy to zero at the rest point $ \theta_1 = \theta_2 = 0 $. The equations of motion are coupled and can now be obtained from the Lagrangian $ \mathcal{L} = \mathcal{K} - U $ as:
 
 {% raw %}
 $$
@@ -400,7 +402,7 @@ m_2 \ell_1 \sin\Delta \, \dot{\theta}_1^2 - g m_2 \sin\theta_2
 $$
 {% endraw %}
 
-where $\mathbf{M}(\boldsymbol{\theta})$ is the \textit{mass matrix}. Illustratively, one can see this as a \textit{Newton's second law} form, where the "mass" is represented by a matrix in a coupled system, instead of a constant in a simple case. To solve the system of equations, we first linearize it. Here, linearizing simply means representing the system as one coupled differential equation per acceleration. After diagonalizing the mass matrix, one finds:
+where $ \mathbf{M}(\boldsymbol{\theta}) $ is the \textit{mass matrix}. Illustratively, one can see this as a \textit{Newton's second law} form, where the "mass" is represented by a matrix in a coupled system, instead of a constant in a simple case. To solve the system of equations, we first linearize it. Here, linearizing simply means representing the system as one coupled differential equation per acceleration. After diagonalizing the mass matrix, one finds:
 
 {% raw %}
 $$
@@ -419,6 +421,7 @@ F_2
 \end{pmatrix} ,
 $$
 
+$$
 \begin{aligned}
 F_1 &= - m_2 \sin\Delta \big( \ell_2 \dot{\theta}_2^2 + \ell_1 \dot{\theta}_1^2 \cos\Delta \big) + g \big( m_2 \sin\theta_2 \cos\Delta - (m_1+m_2) \sin\theta_1 \big) ,\\
 F_2 &= \sin\Delta \big( (m_1+m_2) \ell_1 \dot{\theta}_1^2 + m_2 \ell_2 \cos\Delta \, \dot{\theta}_2^2 \big) + (m_1+m_2) g \big( \sin\theta_1 \cos\Delta - \sin\theta_2 \big) .
