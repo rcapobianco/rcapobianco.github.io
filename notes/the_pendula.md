@@ -110,7 +110,7 @@ is conserved. Rearranging the terms and solving for $\theta$, we obtain the *qua
 $$
 t - t_0 =
 \int_{\theta_0}^{\theta(t)}
-\frac{d\theta'}
+\frac{ \mathrm{d} \theta'}
 {\sqrt{
 \frac{2}{m\ell^2}
 \left(
