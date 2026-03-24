@@ -142,7 +142,7 @@ where we have then defined the dimensionless parameter $\mathcal{E} = E / mg\ell
 
 {% raw %}
 $$
-\left( \frac{{\rm d}\theta}{{\rm d}\tau} \right)^2 = \mathcal{E} - ( 1 - \cos\theta) 
+\left( \frac{ \mathrm{d}\theta}{ \mathrm{d}\tau} \right)^2 = \mathcal{E} - ( 1 - \cos\theta) 
 $$
 {% endraw %}
 
