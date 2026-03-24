@@ -445,7 +445,7 @@ A example of double pendulum motion
 <div style="display:flex; align-items:flex-start; gap:20px;">
 
 <!-- LEFT -->
-<div style="width:60%;">
+<div style="width:50%;">
 
 This system cannot be decoupled nor analytically integrated. Our next step is then to linearize the system, which can be easily visualized by the matrix representation:
 
@@ -498,7 +498,7 @@ $$
 </div>
 
 <!-- RIGHT -->
-<div style="width:40%; max-width:400px;">
+<div style="width:50%;">
 
 <video style="width:100%;" controls>
   <source src="/assets/videos/double_pendulum.mp4" type="video/mp4">
