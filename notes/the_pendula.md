@@ -160,7 +160,7 @@ $$
 Note that the initial velocity cannot be chosen separately from the energy. Besides, it is important to highlight here that, although we are dealing with a first-order differential equation, the numerical value of $\dot{\theta}_0$ does not play any important role in the solution; however, $\mathrm{sign}\, \dot{\theta}_0$ is required to fix the possible branch. The maximum value of the energy is reached exactly at the turning point of the motion, thus: 
 
 $$
-\frac{{\rm d}\theta}{{\rm d}\tau} =0 \ \ \ \rightarrow \boxed{ \mathcal{E} = 1 - \cos\theta_{\max} } 
+\frac{ \mathrm{d}\theta}{ \mathrm{d}\tau} =0 \ \ \ \rightarrow \boxed{ \mathcal{E} = 1 - \cos\theta_{\max} } 
 $$
 
 {% raw %}
