@@ -163,9 +163,7 @@ $$
 \frac{ \mathrm{d}\theta}{ \mathrm{d}\tau} =0 \ \ \ \rightarrow \boxed{ \mathcal{E} = 1 - \cos\theta_{\max} } 
 $$
 
-{% raw %}
 It is clear then that we must have: $\theta_0 \leq \theta_{\max}$; therefore, for a given value of $\mathcal{E}$, the motion is only allowed between $( -\theta_{\max}, \theta_{\max} )$. From here, it is easy to verify that for a particle starting from rest $ \dot{\theta}_0 = 0 \rightarrow \theta_{\max} = \theta_0 $. Thus, our equation becomes:
-{% endraw %}
 
 $$
 \left( \frac{{\rm d}\theta}{{\rm d}\tau} \right)^2 = \cos\theta - \cos\theta_{\max}  \ \ \ \rightarrow \ \ \ \boxed{
