@@ -215,7 +215,7 @@ $$
 Then we conclude:
 
 $$
-\theta(t) = 2 \arcsin\left[ k \, \mathrm{sn}\left( \xi_\theta \omega_0 (t-t_0) + F(\psi_0, k) , k \right) \right] \
+\theta(t) = 2 \arcsin \left[ k \, \mathrm{sn}\left( \xi_\theta \omega_0 (t-t_0) + F(\psi_0, k) , k \right) \right] 
 $$
 
 where $\mathrm{sn}(u,k) = \sin(\mathrm{am}(u,k))$. The motion is oscillatory for $\theta_{\max} < \pi$, or analogously $k<1$. Remember, as previously mentioned, elliptic functions are doubly periodic. In this case, the two periods of $\mathrm{sn}(u,k)$ are: 
