@@ -439,7 +439,7 @@ $$
 <!-- RIGHT -->
 <div style="width:40%;">
 
-<video style="width:100%;" controls>
+<video style="width:120%;" controls>
   <source src="/assets/videos/double_pendulum.mp4" type="video/mp4">
 </video>
 
