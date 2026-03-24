@@ -429,7 +429,18 @@ F_2 &= \sin\Delta \big( (m_1+m_2) \ell_1 \dot{\theta}_1^2 + m_2 \ell_2 \cos\Delt
 $$
 {% endraw %}
 
+<div style="text-align:center; margin:20px 0;">
 
+<video width="600" controls>
+  <source src="/assets/videos/double_pendulum.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+<p style="font-size:14px;">
+Double pendulum motion
+</p>
+
+</div>
 
 
 
