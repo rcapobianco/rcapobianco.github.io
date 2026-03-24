@@ -221,7 +221,7 @@ $$
 where $\mathrm{sn}(u,k) = \sin(\mathrm{am}(u,k))$. The motion is oscillatory for $\theta_{\max} < \pi$, or analogously $k<1$. Remember, as previously mentioned, elliptic functions are doubly periodic. In this case, the two periods of $\mathrm{sn}(u,k)$ are: 
 
 $$
-\omega_1 = 4K(k) \ , \ \ \ \qquad \ \ \  \omega_2 = 2 i K(1-k)
+\omega_1 = 4K(k) \ , \ \ \ \qquad \ \ \  \omega_2 = 2 i K(1-k^2)
 $$
 
 where $ K(k) = F(\pi/2, k) $ is known as *complete elliptic integral of the first kind*, it has real modulus for $ \lvert k \rvert \le 1 $, and this is precisely the period of our motion we are interested in. Therefore, the planar pendulum motion has a period:
@@ -253,19 +253,19 @@ Oscillatory motion requires $\theta_{\max} < \pi$. As $\theta_{\max} \rightarrow
 At the separatrix, we deal with the equation:
 
 $$
-\mathcal{E} = 0 \ , \ \ \ \rightarrow \ \ \ \boxed{ \frac{{\rm d}\theta}{{\rm d}\tau} = \xi_{\theta} \sqrt{1 + \cos\theta} }
+\mathcal{E} = 2 \ , \ \ \ \rightarrow \ \ \ \boxed{ \frac{{\rm d}\theta}{{\rm d}\tau} = \xi_{\theta} \sqrt{1 + \cos\theta} }
 $$
 
 By rewriting the equation using the relation: $ 1 + \cos\theta = 2 \cos^2 \left( \frac{\theta}{2} \right)$ we find:
 
 $$
-{\rm d}\tau = \xi_\theta \frac{{\rm d}\theta}{\sqrt{2} \cos\left( \frac{\theta}{2} \right)} = \xi_\theta \sqrt{2} \sec{\rm x} {\rm d x}
+{\rm d}\tau = \xi_\theta \frac{{\rm d}\theta}{\sqrt{2} \cos\left( \frac{\theta}{2} \right)} = \xi_\theta \sqrt{2} \sec({\rm x}) {\rm d x}
 $$
 
 where: $\theta(t) = 2{\rm x}(t)$. The above integral can now be directly evaluated:
 
 $$
-\int \sec{\rm x} \, {\rm d x} = \ln \left( \lvert \sec{\rm x} - \tan{\rm x} \rvert \right) + C = \ln \left( \left| \tan \left( \frac{\pi}{4} + \frac{\theta}{4} \right) \right| \right) + C 
+\int \sec({\rm x}) \, {\rm d x} = \ln \left( \lvert \sec({\rm x}) - \tan({\rm x}) \rvert \right) + C = \ln \left( \left| \tan \left( \frac{\pi}{4} + \frac{\theta}{4} \right) \right| \right) + C 
 $$
 
 Then, after some simple manipulation, we obtain the separatrix exact solution:
