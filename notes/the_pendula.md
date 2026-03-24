@@ -462,10 +462,10 @@ An example of double pendulum motion
 
 The spherical pendulum is just the three-dimensional counterpart of the planar pendulum. In other words, a point-mass suspended by a thin massless inextensible string of fixed length. The equations of motion can then be described in terms of the two polar and azimuthal angles, as shown in Fig. 3
 
-<div style="display:flex; align-items:stretch; gap:20px; flex-wrap:wrap;">
+<div style="display:flex; align-items:stretch; gap:20px;">
 
 <!-- LEFT -->
-<div style="width:40%; max-width:260px;">
+<div style="flex:0 0 260px;">
 
 <img src="/assets/images/spherical_pendulum_coodinates.png" style="width:100%;">
 
@@ -477,7 +477,7 @@ Fig. 3 — Spherical pendulum
 
 
 <!-- RIGHT -->
-<div style="width:60%;">
+<div style="flex:1;">
 
 {% raw %}
 $$
