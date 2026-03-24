@@ -402,7 +402,7 @@ m_2 \ell_1 \sin\Delta \, \dot{\theta}_1^2 - g m_2 \sin\theta_2
 $$
 {% endraw %}
 
-where $ \mathbf{M}(\boldsymbol{\theta}) $ is the \textit{mass matrix}. Illustratively, one can see this as a \textit{Newton's second law} form, where the "mass" is represented by a matrix in a coupled system, instead of a constant in a simple case. To solve the system of equations, we first linearize it. Here, linearizing simply means representing the system as one coupled differential equation per acceleration. After diagonalizing the mass matrix, one finds:
+where $ \mathbf{M}(\boldsymbol{\theta}) $ is the *mass matrix*. Illustratively, one can see this as a *Newton's second law* form, where the "mass" is represented by a matrix in a coupled system, instead of a constant in a simple case. To solve the system of equations, we first linearize it. Here, linearizing simply means representing the system as one coupled differential equation per acceleration. After diagonalizing the mass matrix, one finds:
 
 {% raw %}
 $$
