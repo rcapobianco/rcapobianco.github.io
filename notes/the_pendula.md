@@ -736,11 +736,11 @@ where the first integral depends only on the initial conditions, thus, the integ
 
 {% raw %}
 $$
-\tau - \tau_{0} - v_{in} = \int_{\infty}^{v} \frac{{\rm d}v'}{\sqrt{P_W(v')}} \ \ \ \rightarrow \ \ \ v(t) = \wp(\tau - v_{in}, \{g_2,g_3 \})\, ,
+\tau - \tau_{0} - v_{in} = \int_{\infty}^{v} \frac{\mathrm{d}v'}{\sqrt{P_W(v')}} \ \ \ \rightarrow \ \ \ v(t) = \wp(\tau - v_{in}, \{g_2,g_3 \})\, ,
 $$
 {% endraw %}
 
-with $v_{in} = \xi \int_{\infty}^{v_0} \frac{{\rm d}v'}{\sqrt{P_W(v')}}$. Finally, we obtain the solution:
+with $v_{in} = \xi \int_{\infty}^{v_0} \frac{ \mathrm{d}v'}{\sqrt{P_W(v')}}$. Finally, we obtain the solution:
 
 {% raw %}
 $$
@@ -753,7 +753,7 @@ The next step is to solve the $\phi-$ equation:
 
 {% raw %}
 $$
-\dot{\phi} = \frac{L_z}{m\ell^2\sin^2\theta} \ \ \ \rightarrow \ \ \ \frac{{\rm d}\phi}{{\rm d}\tau} = \frac{\alpha}{1-\cos^2\theta}\,,
+\dot{\phi} = \frac{L_z}{m\ell^2\sin^2\theta} \ \ \ \rightarrow \ \ \ \frac{ \mathrm{d}\phi}{ \mathrm{d}\tau} = \frac{\alpha}{1-\cos^2\theta}\,,
 $$
 {% endraw %}
 
