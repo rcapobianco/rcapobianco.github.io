@@ -125,7 +125,7 @@ first here, we note that physical solutions exist only for $E > mg\ell (1-\cos\t
 The real advantage of this representation is that, from this integral form, we can directly obtain the analytical solution in terms of \textit{elliptic functions}. A detailed discussion of their theory is beyond the scope of this essay, but highly recommended—it is a truly beautiful formulation. Moreover, to do a proper discussion and make this text understandable and pedagogical, a practical introduction to the functions used here will be presented, as they are crucial for the discussion. As a first encounter, one may think of elliptic functions as generalizations of trigonometric functions—which are periodic with period $2\pi$—however, elliptic functions possess two periods. To illustrate, consider that $f$ is an elliptic function; then we have  
 
 $$
-f(z + \omega_1) = f(z) = f(z + \omega_2) \ 
+f(z + \omega_1) = f(z) = f(z + \omega_2)  
 $$
 
 Functions like this can only be nontrivial, i.e., different from constant, when the ratio between the two periods, $\omega_1 / \omega_2$, is not purely real. Therefore, elliptic functions are part of complex analysis, even when they are evaluated on real arguments in physical problems. A particularly interesting feature to highlight here is that: if $f(z)$ is an elliptic function, and assuming that $\Phi(z)$ is a rational function, then $\Phi(f(z))$ is an elliptic function with the same periods as $f(z)$; this is a crucial point to solve the \textit{elliptic integral of third kind} that appears later.  
@@ -135,14 +135,14 @@ Our main objective here is to discuss the physics of different pendulum systems.
 Now, it is time to solve the pendulum equation finally! The strategy will be simple: we will perform a set of transformations in order to cast the differential equation into the known elliptic integral form. Starting from the energy conservation:
 
 $$
-\dot{\theta}^2 = \frac{2}{m\ell^2}\left( E - mg\ell\left( 1-\cos\theta \right) \right) = 2\omega_0^{\,2} \left( \mathcal{E} - (1-\cos\theta) \right) \ 
+\dot{\theta}^2 = \frac{2}{m\ell^2}\left( E - mg\ell\left( 1-\cos\theta \right) \right) = 2\omega_0^{\,2} \left( \mathcal{E} - (1-\cos\theta) \right) 
 $$
 
 where we have then defined the dimensionless parameter $\mathcal{E} = E / mg\ell$. A good practice when solving differential equations in physics is to always deal with dimensionless quantities; hence, we re-parametrize our time parameter as $ \sqrt{2\omega_0^{\,2}}\,{\rm d} t = {\rm d}\tau $. Therefore, we deal with the differential equation:
 
 {% raw %}
 $$
-\left( \frac{{\rm d}\theta}{{\rm d}\tau} \right)^2 = \mathcal{E} - ( 1 - \cos\theta) \ 
+\left( \frac{{\rm d}\theta}{{\rm d}\tau} \right)^2 = \mathcal{E} - ( 1 - \cos\theta) 
 $$
 {% endraw %}
 
@@ -154,7 +154,7 @@ Now, we need to distinguish between the possible domains of existence for the or
 Here, the allowed regions for orbits strongly depend on the turning points. Imagine that we start the motion with the initial value problem: 
 
 $$
-\theta(t_0) = \theta_0 \ , \ \ \ \qquad \ \ \ \dot{\theta}(t_0) = \dot{\theta}_0 \ 
+\theta(t_0) = \theta_0  , \ \ \ \qquad \ \ \ \dot{\theta}(t_0) = \dot{\theta}_0 
 $$
 
 Note that the initial velocity cannot be chosen separately from the energy. Besides, it is important to highlight here that, although we are dealing with a first-order differential equation, the numerical value of $\dot{\theta}_0$ does not play any important role in the solution; however, $\mathrm{sign}\, \dot{\theta}_0$ is required to fix the possible branch. The maximum value of the energy is reached exactly at the turning point of the motion, thus: 
