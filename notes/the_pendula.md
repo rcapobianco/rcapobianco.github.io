@@ -450,3 +450,260 @@ An example of double pendulum motion
 </div>
 
 </div>
+
+
+
+
+
+
+
+
+# Spherical Pendulum
+
+The spherical pendulum is just the three-dimensional counterpart of the planar pendulum. In other words, a point-mass suspended by a thin massless inextensible string of fixed length. The equations of motion can then be described in terms of the two polar and azimuthal angles as shown in Fig. 3
+
+<div style="display:flex; align-items:flex-start; gap:20px;">
+
+<!-- LEFT -->
+<div style="width:40%; max-width:260px;">
+
+<img src="/assets/images/spherical_pendulum_coodinates.png" style="width:100%;">
+
+<p style="font-size:14px; text-align:center;">
+Fig. 3 — Spherical pendulum
+</p>
+
+</div>
+
+
+<!-- RIGHT -->
+<div style="width:60%;">
+
+{% raw %}
+$$
+\begin{aligned}
+x &= \ell \sin\theta \cos\phi , \\
+y &= \ell \sin\theta \sin\phi , \\
+z &= -\ell \cos\theta .
+\end{aligned}
+$$
+{% endraw %}
+
+The gravitational potential can be taken as:
+
+{% raw %}
+$$
+U = m g \ell (1-\cos\theta)
+$$
+{% endraw %}
+
+where we, once again, are setting the zero of the potential at the pendulum rest point, that is, at $\theta = 0$. Similar to the planar case, since we are considering the string to be inextensible, the motion is restricted to a sphere of radius $\ell$. After some algebra, one can obtain the kinetic energy:
+
+</div>
+
+</div>
+
+{% raw %}
+$$
+\mathcal{K}
+= \frac{m}{2} v^2
+= \frac{m \ell^2}{2}
+\left(
+\dot{\theta}^2
++
+\sin^2\theta \, \dot{\phi}^2
+\right)
+$$
+{% endraw %}
+
+Then the Lagrangian is:
+
+{% raw %}
+$$
+\mathcal{L} =
+\mathcal{K} - U =
+\frac{m\ell^2}{2}
+\left(
+\dot{\theta}^2 +
+\sin^2\theta \, \dot{\phi}^2
+\right) -
+m g \ell (1-\cos\theta)
+$$
+{% endraw %}
+
+which does not depend explicitly on the generalized coordinate $\phi$; hence, $\phi$ is a <em>cyclic variable</em>, which implies that the angular momentum in $z$ direction is conserved, thus:
+
+{% raw %}
+$$
+\frac{\partial \mathcal{L}}{\partial \phi} = 0
+\qquad \rightarrow \qquad
+\boxed{
+\dot{\phi} =
+\frac{L_z}{m \ell^2 \sin^2\theta}
+}
+$$
+{% endraw %}
+
+The spherical pendulum is, actually, also an integrable system. To demonstrate that we start from the energy conservation:
+
+{% raw %}
+$$
+\begin{aligned}
+E
+&=
+\mathcal{K}+U
+\\
+&=
+\frac{m\ell^2}{2}
+\left(
+\dot{\theta}^2
++
+\sin^2\theta \, \dot{\phi}^2
+\right)
++
+m g \ell (1-\cos\theta)
+\\
+&=
+\frac{m\ell^2}{2}\dot{\theta}^2
++
+\frac{L_z^{\,2}}
+{2 m \ell^2 \sin^2\theta}
++
+m g \ell (1-\cos\theta)
+\end{aligned}
+$$
+{% endraw %}
+
+Solving for $\dot{\theta}$:
+
+{% raw %}
+$$
+\dot{\theta}^2 =
+\frac{2}{m\ell^2}
+\left(
+E - V_{eff}(\theta)
+\right)
+\qquad
+V_{eff}(\theta) =
+\frac{L_z^{\,2}}
+{2 m \ell^2 \sin^2\theta}
++
+m g \ell (1-\cos\theta)
+$$
+{% endraw %}
+
+then, for physical motion we also need to require $E > V_{eff}(\theta)$. It is clear here that in the special case $L_z = 0$, the spherical pendulum reduces to the planar pendulum as the extra direction $\phi$ is no longer accessible.
+
+The procedure to obtain an analytical solution here is similar to the planar pendulum, but here we will make use of a different class of elliptic functions. The first step to solve the equation is to apply the coordinate transformation:
+
+{% raw %}
+$$
+\cos\theta = u
+\qquad
+\dot{u}^2 =
+\sin^2\theta \, \dot{\theta}^2
+$$
+{% endraw %}
+
+in terms of $u$, the conservation of energy becomes:
+
+{% raw %}
+$$
+\dot{u}^2 =
+2 \omega_0^{\,2}
+\left(
+u^3 + (\mathcal{E}-1)u^2 - u - \mathcal{E} + 1 + \lambda_z
+\right)
+$$
+{% endraw %}
+
+where we have redefined the quantities:
+
+{% raw %}
+$$
+\omega_0^{\,2} =
+\frac{g}{\ell}
+\qquad
+\mathcal{E} =
+\frac{E}{m g \ell}
+\qquad
+\lambda_z =
+\frac{L_z^{\,2}}
+{2 m^2 g \ell^3}
+$$
+{% endraw %}
+
+Note that, $\mathcal{E}$ and $\lambda_z$ are dimensionless already. In order to write down the full dimensionless form we rescale the time coordinate as:
+
+{% raw %}
+$$
+d\tau =
+\sqrt{2\omega_0^{\,2}}
+\, dt
+$$
+{% endraw %}
+
+Thus:
+
+{% raw %}
+$$
+\left(
+\frac{du}{d\tau}
+\right)^2 = u^3 + (\mathcal{E}-1)u^2 - u - \mathcal{E} + 1 + \lambda_z
+:=
+P_3(u)
+$$
+{% endraw %}
+
+the rhs is an order-three polynomial, which is almost the desired form. Next, we perform the transformation:
+
+{% raw %}
+$$
+u=-4v-
+\frac{\mathcal{E}-1}{3}
+\qquad
+du = -4 dv
+$$
+{% endraw %}
+
+which then casts the equation in the form:
+
+{% raw %}
+$$
+\left(
+\frac{dv}{d\tau}
+\right)^2=
+4 v^3-
+g_2 v-
+g_3
+:=
+P_W(v)
+$$
+
+$$
+g_2 =
+\frac{1}{4}
+\left(
+\frac{(\mathcal{E}+1)^2}{3} + 1
+\right)
+\qquad 
+g_3 =
+\frac{1}{16}
+\left(
+\frac{2(\mathcal{E}-1)^3}{27} -
+\frac{2(\mathcal{E}-1)}{3} +
+\lambda_z
+\right)
+$$
+{% endraw %}
+
+
+
+
+
+
+
+
+
+
+
