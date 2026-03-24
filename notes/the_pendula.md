@@ -301,7 +301,7 @@ $$
 and now the inversion is straightforward: 
 
 $$
-\theta (t) = 2 \mathrm{am} \left( \xi_\theta \sqrt{\frac{\mathcal{E}}{2}}\omega_0 \left( t-t_0 \right) + F\left( \frac{\theta_0}{2}, j \right) , j \right) 
+\theta (t) = 2 \, \mathrm{am} \left( \xi_\theta \sqrt{\frac{\mathcal{E}}{2}}\omega_0 \left( t-t_0 \right) + F\left( \frac{\theta_0}{2}, j \right) , j \right) 
 $$
 
 where $\mathrm{am}(u(t),j)$ is the amplitude function. In this scenario, the pendulum has more than enough energy to complete a full rotation regardless of the starting conditions $( \theta_0 , \dot{\theta_0} )$ and, since the system is conservative, the orbits repeat themselves indefinitely.
