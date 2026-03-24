@@ -381,20 +381,7 @@ m_2 \ell_1 \cos\Delta \, \ddot{\theta}_1 + m_2 \ell_2 \ddot{\theta}_2 &= m_2 \el
 $$
 {% endraw %}
 
-<div style="text-align:center; margin:20px 0;">
-
-<video width="600" controls>
-  <source src="/assets/videos/double_pendulum.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-
-<p style="font-size:14px;">
-A example of double pendulum motion
-</p>
-
-</div>
-
-<div style="display:flex; align-items:flex-start; gap:20px;">
+<div style="display:flex; align-items:center; gap:20px;">
 
 <!-- LEFT -->
 <div style="width:60%;">
