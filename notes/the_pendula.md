@@ -724,15 +724,15 @@ t = \int_{\infty}^{v} \frac{{\rm d}v'}{\sqrt{P_W(v')}}\,\ \ \ \rightarrow \ \ \ 
 $$
 {% endraw %}
 
-where $\wp(t, \{g_2,g_3 \})$ is the Weierstrass $\wp-$function, an elliptic function. In order to cast our IVP into this final form, we do;
+where $\wp(t, \{g_2,g_3 \})$ is the Weierstrass $\wp$-function, an elliptic function. In order to cast our IVP into this final form, we do;
 
 {% raw %}
 $$
-\int_{v_0}^{v} \frac{{\rm d}v'}{\sqrt{P_W(v')}} = \int_{v_0}^{\infty}\frac{{\rm d}v'}{\sqrt{P_W(v')}} + \int_{\infty}^{v}\frac{{\rm d}v'}{\sqrt{P_W(v')}}\,,
+\int_{v_0}^{v} \frac{ {\rm d}v' }{\sqrt{P_W(v')}} = \int_{v_0}^{\infty}\frac{{\rm d}v'}{\sqrt{P_W(v')}} + \int_{\infty}^{v}\frac{{\rm d}v'}{\sqrt{P_W(v')}}\,,
 $$
 {% endraw %}
 
-where the first integral depends only on the initial conditions, thus, the integral can be evaluated in terms of Weierstrass $\wp$- function as:
+where the first integral depends only on the initial conditions, thus, the integral can be evaluated in terms of Weierstrass $\wp$-function as:
 
 {% raw %}
 $$
