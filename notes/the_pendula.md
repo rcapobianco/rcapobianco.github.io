@@ -442,5 +442,72 @@ A example of double pendulum motion
 
 </div>
 
+<div style="display:flex; align-items:flex-start; gap:20px;">
 
+<!-- LEFT -->
+<div style="width:60%;">
 
+This system cannot be decoupled nor analytically integrated. Our next step is then to linearize the system, which can be easily visualized by the matrix representation:
+
+{% raw %}
+$$
+\underbrace{
+\begin{pmatrix}
+(m_1 + m_2)\,\ell_1 & m_2 \ell_2 \cos\Delta \\
+m_2 \ell_1 \cos\Delta & m_2 \ell_2
+\end{pmatrix}}_{\mathbf{M}(\boldsymbol{\theta})}
+\begin{pmatrix}
+\ddot{\theta}_1 \\
+\ddot{\theta}_2
+\end{pmatrix} =
+\underbrace{
+\begin{pmatrix}
+- m_2 \ell_2 \sin\Delta \, \dot{\theta}_2^2 - g (m_1 + m_2) \sin\theta_1 \\
+m_2 \ell_1 \sin\Delta \, \dot{\theta}_1^2 - g m_2 \sin\theta_2
+\end{pmatrix}}_{\mathbf{C}(\boldsymbol{\theta}, \dot{\boldsymbol{\theta}})}
+$$
+{% endraw %}
+
+where $ \mathbf{M}(\boldsymbol{\theta}) $ is the *mass matrix*. Illustratively, one can see this as a *Newton's second law* form, where the "mass" is represented by a matrix in a coupled system, instead of a constant in a simple case. To solve the system of equations, we first linearize it. Here, linearizing simply means representing the system as one coupled differential equation per acceleration. After diagonalizing the mass matrix, one finds:
+
+{% raw %}
+$$
+\begin{pmatrix}
+\ddot{\theta}_1 \\
+\ddot{\theta}_2
+\end{pmatrix} =
+\frac{1}{m_1 + m_2 \sin^2\Delta}
+\begin{pmatrix}
+1/\ell_1 & 0 \\
+0 & 1/\ell_2
+\end{pmatrix}
+\begin{pmatrix}
+F_1 \\
+F_2
+\end{pmatrix} 
+$$
+
+$$
+\begin{aligned}
+F_1 &= - m_2 \sin\Delta \big( \ell_2 \dot{\theta}_2^2 + \ell_1 \dot{\theta}_1^2 \cos\Delta \big) + g \big( m_2 \sin\theta_2 \cos\Delta - (m_1+m_2) \sin\theta_1 \big) \\
+F_2 &= \sin\Delta \big( (m_1+m_2) \ell_1 \dot{\theta}_1^2 + m_2 \ell_2 \cos\Delta \, \dot{\theta}_2^2 \big) + (m_1+m_2) g \big( \sin\theta_1 \cos\Delta - \sin\theta_2 \big) 
+\end{aligned}
+$$
+{% endraw %}
+
+</div>
+
+<!-- RIGHT -->
+<div style="width:40%; max-width:400px;">
+
+<video style="width:100%;" controls>
+  <source src="/assets/videos/double_pendulum.mp4" type="video/mp4">
+</video>
+
+<p style="font-size:14px; text-align:center;">
+Double pendulum motion
+</p>
+
+</div>
+
+</div>
