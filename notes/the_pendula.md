@@ -732,7 +732,7 @@ $$
 $$
 {% endraw %}
 
-where the first integral depends only on the initial conditions, thus, the integral can be evaluated in terms of Weierstrass $\wp-$ function as:
+where the first integral depends only on the initial conditions, thus, the integral can be evaluated in terms of Weierstrass $\wp$- function as:
 
 {% raw %}
 $$
