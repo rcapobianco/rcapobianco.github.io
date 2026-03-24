@@ -444,7 +444,7 @@ $$
 </video>
 
 <p style="font-size:14px; text-align:center;">
-Double pendulum motion
+An example of double pendulum motion
 </p>
 
 </div>
