@@ -358,9 +358,9 @@ $$
 $$
 {% endraw %}
 
-<div>
+</div>
 
-<div>
+</div>
 
 where we have set $ \Delta = \theta_1 - \theta_2 $. Let's now consider that each mass is subject to a gravitational potential as:
 
