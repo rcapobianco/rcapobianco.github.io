@@ -785,7 +785,7 @@ here there is two new Weierstrass functions $\zeta(z)$ and $\sigma(z)$, which ar
 
 {% raw %}
 $$
-\frac{{\rm d}}{{\rm d}z}\zeta(z) = -\wp(z)\, , \ \ \ \qquad \ \ \ \frac{{\rm d}}{{\rm d}z}\ln \sigma(z) = \zeta(z)\, .
+\frac{{\rm d}}{{\rm d}z}\zeta(z) = -\wp(z)\, , \ \ \ \qquad \ \ \ \frac{{\rm d}}{{\rm d}z}\ln \sigma(z) = \zeta(z)
 $$
 {% endraw %}
 
@@ -793,7 +793,7 @@ Actually, these are not elliptic functions, but "\textit{quasi-elliptic}". Howev
 
 {% raw %}
 $$
-\zeta(z+\omega_1) - \zeta(z) = 2\eta_1\, , \ \ \ \qquad \ \ \ \zeta(z+\omega_2) - \zeta(z) = 2\eta_2\, , 
+\zeta(z+\omega_1) - \zeta(z) = 2\eta_1\, , \ \ \ \qquad \ \ \ \zeta(z+\omega_2) - \zeta(z) = 2\eta_2
 $$
 {% endraw %}
 
@@ -801,7 +801,7 @@ where $\eta_1$ and $\eta_2$ are sometimes referred to as \textit{periods of seco
 
 {% raw %}
 $$
-\omega_2 \eta_1 - \omega_2 \eta_1 = \frac{1}{2}\pi i \, .
+\omega_2 \eta_1 - \omega_1 \eta_2 = \frac{1}{2}\pi i 
 $$
 {% endraw %}
 
@@ -810,7 +810,7 @@ Thus, we can use the above recurrence relation to solve the $\phi-$ equation for
 {% raw %}
 $$
 \int_{\phi_0}^{\phi} {\rm d}\phi' = \frac{\alpha}{8} \int_{v_0}^{v} \Big( \frac{1}
-{v - \wp(y_1)} - \frac{1}{v-\wp(y_2)}\Big) {\rm d}v\, ,
+{v - \wp(y_1)} - \frac{1}{v-\wp(y_2)}\Big) {\rm d}v
 $$
 {% endraw %}
 
