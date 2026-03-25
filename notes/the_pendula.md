@@ -829,6 +829,11 @@ $$
 
 This may be lengthy, but it is the final analytical solution of the spherical pendulum in terms of Weierstrass elliptic functions.
 
+<div style="display:flex; align-items:flex-start; gap:20px;">
+
+<!-- LEFT 60% -->
+<div style="flex:0 0 60%;">
+
 A particularly special case is the <em>conical orbit</em>. In that case, the motion is exactly set at the equilibrium point, the system has a double root, the elliptic functions degenerate, and are no longer necessary. The motion is restricted in the $\theta-$ direction, which means that the motion should have both the $\ddot{\theta} = \dot{\theta}=0$, thus:
 
 {% raw %}
@@ -856,6 +861,24 @@ $$
 {% endraw %}
 
 Thus, this is the case in which the gravitational force is precisely balanced by the angular motion.
+
+</div>
+
+
+<!-- RIGHT 40% -->
+<div style="flex:1; max-width:420px;">
+
+<video width="100%" controls>
+  <source src="/assets/videos/spherical_pendulum_vid.mp4" type="video/mp4">
+</video>
+
+<p style="font-size:14px; text-align:center;">
+Example of a orbit of the spherical pendulum
+</p>
+
+</div>
+
+</div>
 
 
 
