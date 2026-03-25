@@ -829,7 +829,7 @@ $$
 
 This may be lengthy, but it is the final analytical solution of the spherical pendulum in terms of Weierstrass elliptic functions.
 
-A particularly special case is the \textit{conical orbit}. In that case, the motion is exactly set at the equilibrium point, the system has a double root, the elliptic functions degenerate, and are no longer necessary. The motion is restricted in the $\theta-$ direction, which means that the motion should have both the $\ddot{\theta} = \dot{\theta}=0$, thus:
+A particularly special case is the <em>conical orbit</em>. In that case, the motion is exactly set at the equilibrium point, the system has a double root, the elliptic functions degenerate, and are no longer necessary. The motion is restricted in the $\theta-$ direction, which means that the motion should have both the $\ddot{\theta} = \dot{\theta}=0$, thus:
 
 {% raw %}
 $$
