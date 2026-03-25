@@ -13,6 +13,9 @@ For this essay, some knowledge of classical mechanics will be helpful. We will a
 
 Think of this as a working notebook: from the simple swing of a mass to the edge of chaos. I am glad you are here.
 
+The systems discussed here have numerical and analytical implementations, which can be found at  
+[the_pendula repository](https://github.com/rcapobianco/the_pendula).
+
 # The Planar Pendulum
 
 We start with the simplest system: a point mass attached to an inextensible string of fixed length, moving under the influence of gravity. The system is a two-dimensional problem with the coordinates (see Fig. 1):
